@@ -24,16 +24,11 @@ collection = [2, 3]
 
 for k in range(1, x//6 + 2):
     if prime(6*k - 1) and (6*k - 1) < x:
-        if collection.count(6*k - 1) == 0:
-            collection.append(6*k - 1)
+        collection.append(6*k - 1)
     if prime(6*k + 1) and (6*k + 1) < x:
-        if collection.count(6 * k + 1) == 0:
-            collection.append(6*k + 1)
-s = 0
-for z in collection :
-    s += z
+        collection.append(6*k + 1)
+
 
 
 print(collection)
 print(f"execution time = {time.time()- t}")
-print(f"sum of primes = {s}")
